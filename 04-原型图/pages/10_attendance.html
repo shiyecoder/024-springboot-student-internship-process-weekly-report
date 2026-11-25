@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>考勤汇总 · 实习管理系统</title>
+<link rel="stylesheet" href="../mock.css"></head>
+<body><div class="shell">
+<aside class="side">
+  <div class="brand"><span class="mark">实习</span>实习过程管理</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="/pages/02_dashboard.html">实习质量看板</a>
+<a class="" href="/pages/05_report.html">周报工作台<span class="badge">6</span></a>
+<div class="group">实习过程</div>
+<a class="" href="/pages/03_application.html">实习备案中心</a>
+<a class="" href="/pages/04_detail.html">档案详情</a>
+<a class="on" href="/pages/10_attendance.html">考勤汇总</a>
+<a class="" href="/pages/11_change.html">变更审批<span class="badge">2</span></a>
+<a class="" href="/pages/12_issue.html">异常关怀<span class="badge">1</span></a>
+<a class="" href="/pages/13_visit.html">走访记录</a>
+<div class="group">周报评价</div>
+<a class="" href="/pages/06_review.html">导师批阅</a>
+<a class="" href="/pages/07_milestone.html">里程碑进度</a>
+<a class="" href="/pages/14_evaluation.html">结项评价</a>
+<div class="group">基础数据</div>
+<a class="" href="/pages/08_company.html">企业库</a>
+<a class="" href="/pages/09_batch.html">实习批次</a>
+<div class="group">分析配置</div>
+<a class="" href="/pages/16_board.html">统计看板</a>
+<a class="" href="/pages/15_rule.html">规则配置</a>
+<div class="group">系统</div>
+<a class="" href="/pages/19_role.html">角色管理</a>
+<a class="" href="/pages/20_message.html">消息中心<span class="badge">3</span></a>
+<a class="" href="/pages/18_profile.html">个人中心</a>
+</nav>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb">实习过程管理 / <b>考勤汇总</b></div>
+    <div class="spacer"></div>
+    <a class="icon-btn" href="/pages/20_message.html" title="消息">✉</a>
+    <span class="hint">实习管理员</span><div class="avatar">林</div>
+  </header>
+  <main class="content">
+<h1>考勤汇总</h1><div class="sub">2026 年 10 月 · 企业导师录入后由学生确认，异常需附说明</div>
+<div class="toolbar"><select><option>2026 年 10 月</option><option>2026 年 09 月</option></select>
+<select><option>全部企业</option></select><button class="btn primary">查询</button>
+<div style="flex:1"></div><button class="btn ghost">导出汇总</button><button class="btn primary">录入考勤</button></div>
+<div class="card"><table><thead><tr><th>学生</th><th>企业</th><th>月份</th><th>应出勤</th><th>实出勤</th><th>迟到</th><th>请假</th><th>确认状态</th><th>备注</th></tr></thead><tbody>
+<tr><td>陈知远</td><td>杭州云枢科技</td><td>2026-10</td><td class="num">22</td><td class="num">21</td><td class="num">1</td><td class="num">1</td><td><span class="tag t-green">学生已确认</span></td><td>10-18 事假 1 天</td></tr>
+<tr><td>宋雨桐</td><td>宁波甬信会计师事务所</td><td>2026-10</td><td class="num">22</td><td class="num">22</td><td class="num">0</td><td class="num">0</td><td><span class="tag t-amber">待学生确认</span></td><td>—</td></tr>
+<tr><td>赵一鸣</td><td>浙江中控技术</td><td>2026-10</td><td class="num">22</td><td class="num">19</td><td class="num">2</td><td class="num">1</td><td><span class="tag t-green">学生已确认</span></td><td>机房夜班调休</td></tr>
+<tr><td>周若菡</td><td>上海远景能源</td><td>2026-10</td><td class="num">22</td><td class="num">22</td><td class="num">0</td><td class="num">0</td><td><span class="tag t-green">学生已确认</span></td><td>—</td></tr>
+<tr><td>林嘉禾</td><td>杭州拾光传媒</td><td>2026-10</td><td class="num">22</td><td class="num">14</td><td class="num">0</td><td class="num">8</td><td><span class="tag t-red">学生有异议</span></td><td>请假天数存在争议</td></tr>
+</tbody></table></div></main>
+</div></div></body></html>

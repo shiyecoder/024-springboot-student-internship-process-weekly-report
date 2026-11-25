@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>结项评价 · 实习管理系统</title>
+<link rel="stylesheet" href="../mock.css"></head>
+<body><div class="shell">
+<aside class="side">
+  <div class="brand"><span class="mark">实习</span>实习过程管理</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="/pages/02_dashboard.html">实习质量看板</a>
+<a class="" href="/pages/05_report.html">周报工作台<span class="badge">6</span></a>
+<div class="group">实习过程</div>
+<a class="" href="/pages/03_application.html">实习备案中心</a>
+<a class="" href="/pages/04_detail.html">档案详情</a>
+<a class="" href="/pages/10_attendance.html">考勤汇总</a>
+<a class="" href="/pages/11_change.html">变更审批<span class="badge">2</span></a>
+<a class="" href="/pages/12_issue.html">异常关怀<span class="badge">1</span></a>
+<a class="" href="/pages/13_visit.html">走访记录</a>
+<div class="group">周报评价</div>
+<a class="" href="/pages/06_review.html">导师批阅</a>
+<a class="" href="/pages/07_milestone.html">里程碑进度</a>
+<a class="on" href="/pages/14_evaluation.html">结项评价</a>
+<div class="group">基础数据</div>
+<a class="" href="/pages/08_company.html">企业库</a>
+<a class="" href="/pages/09_batch.html">实习批次</a>
+<div class="group">分析配置</div>
+<a class="" href="/pages/16_board.html">统计看板</a>
+<a class="" href="/pages/15_rule.html">规则配置</a>
+<div class="group">系统</div>
+<a class="" href="/pages/19_role.html">角色管理</a>
+<a class="" href="/pages/20_message.html">消息中心<span class="badge">3</span></a>
+<a class="" href="/pages/18_profile.html">个人中心</a>
+</nav>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb">实习过程管理 / <b>结项评价</b></div>
+    <div class="spacer"></div>
+    <a class="icon-btn" href="/pages/20_message.html" title="消息">✉</a>
+    <span class="hint">实习管理员</span><div class="avatar">林</div>
+  </header>
+  <main class="content">
+<h1>结项评价</h1><div class="sub">企业导师与校内教师分别评分，系统结合周报完成度计算总评；材料缺失不得结项</div>
+<div class="split">
+ <div class="card"><h2>SI20260027 · 林嘉禾 · 结项材料校验</h2>
+ <table><thead><tr><th>材料</th><th>要求</th><th>状态</th></tr></thead><tbody>
+  <tr><td>实习周报</td><td>≥ 12 份</td><td><span class="tag t-green">14 份 · 通过</span></td></tr>
+  <tr><td>月度考勤</td><td>≥ 4 个月</td><td><span class="tag t-green">4 个月 · 通过</span></td></tr>
+  <tr><td>企业导师评价</td><td>必填</td><td><span class="tag t-green">已提交 4.2 分</span></td></tr>
+  <tr><td>校内教师评价</td><td>必填</td><td><span class="tag t-amber">待提交</span></td></tr>
+  <tr><td>结项报告</td><td>必填</td><td><span class="tag t-red">未上传</span></td></tr>
+ </tbody></table>
+ <div class="note" style="margin-top:12px;border-left-color:#A93226">当前存在 2 项缺失，结项按钮不可用。补齐后系统自动解锁。</div>
+ <h2 style="margin-top:20px">企业导师评价</h2>
+ <div class="kv"><div><span>评分</span>4.2 / 5</div><div><span>评价人</span>郑楠</div><div><span>时间</span>2026-10-25</div></div>
+ <p style="margin:10px 0 0">前端基础扎实，交付质量稳定；建议提升需求澄清阶段的主动性。</p>
+ </div>
+ <div class="card"><h2>校内教师评价</h2>
+ <label class="f"><span>周报完成度</span><input value="93" style="width:120px"></label>
+ <label class="f"><span>过程规范</span><input value="88" style="width:120px"></label>
+ <label class="f"><span>综合评分</span><input value="90" style="width:120px"></label>
+ <div class="hint" style="margin-bottom:6px">评语</div>
+ <textarea style="width:100%;height:80px;border:1px solid #DCE7E0;border-radius:6px;padding:8px;font:13px/20px inherit">全程按时提交周报，问题反馈及时，结项报告结构完整。</textarea>
+ <h2 style="margin-top:20px">总评计算</h2>
+ <table><tbody>
+  <tr><td>企业评价（40%）</td><td class="num">4.2 / 5</td><td class="num">33.6</td></tr>
+  <tr><td>校内评价（40%）</td><td class="num">90</td><td class="num">36.0</td></tr>
+  <tr><td>周报完成度（20%）</td><td class="num">93</td><td class="num">18.6</td></tr>
+  <tr><td><b>总评</b></td><td></td><td class="num"><b>88.2 · 良好</b></td></tr>
+ </tbody></table>
+ <button class="btn" style="margin-top:14px;width:100%" disabled>结项归档（材料未齐）</button>
+ </div></div></main>
+</div></div></body></html>

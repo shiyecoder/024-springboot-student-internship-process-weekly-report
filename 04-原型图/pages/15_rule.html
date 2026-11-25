@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>规则配置 · 实习管理系统</title>
+<link rel="stylesheet" href="../mock.css"></head>
+<body><div class="shell">
+<aside class="side">
+  <div class="brand"><span class="mark">实习</span>实习过程管理</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="/pages/02_dashboard.html">实习质量看板</a>
+<a class="" href="/pages/05_report.html">周报工作台<span class="badge">6</span></a>
+<div class="group">实习过程</div>
+<a class="" href="/pages/03_application.html">实习备案中心</a>
+<a class="" href="/pages/04_detail.html">档案详情</a>
+<a class="" href="/pages/10_attendance.html">考勤汇总</a>
+<a class="" href="/pages/11_change.html">变更审批<span class="badge">2</span></a>
+<a class="" href="/pages/12_issue.html">异常关怀<span class="badge">1</span></a>
+<a class="" href="/pages/13_visit.html">走访记录</a>
+<div class="group">周报评价</div>
+<a class="" href="/pages/06_review.html">导师批阅</a>
+<a class="" href="/pages/07_milestone.html">里程碑进度</a>
+<a class="" href="/pages/14_evaluation.html">结项评价</a>
+<div class="group">基础数据</div>
+<a class="" href="/pages/08_company.html">企业库</a>
+<a class="" href="/pages/09_batch.html">实习批次</a>
+<div class="group">分析配置</div>
+<a class="" href="/pages/16_board.html">统计看板</a>
+<a class="on" href="/pages/15_rule.html">规则配置</a>
+<div class="group">系统</div>
+<a class="" href="/pages/19_role.html">角色管理</a>
+<a class="" href="/pages/20_message.html">消息中心<span class="badge">3</span></a>
+<a class="" href="/pages/18_profile.html">个人中心</a>
+</nav>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb">实习过程管理 / <b>规则配置</b></div>
+    <div class="spacer"></div>
+    <a class="icon-btn" href="/pages/20_message.html" title="消息">✉</a>
+    <span class="hint">实习管理员</span><div class="avatar">林</div>
+  </header>
+  <main class="content">
+<h1>规则配置 · 周报里程碑完整度检查</h1><div class="sub">权重合计必须等于 100%；修改后记录版本与生效时间，只影响新计算或主动重算的数据</div>
+<div class="split">
+ <div class="card"><h2>权重配置（v3 · 生效中）</h2>
+ <table><thead><tr><th>输入因素</th><th>权重</th><th>阈值</th><th>数据来源</th></tr></thead><tbody>
+  <tr><td>里程碑完成项</td><td><input value="30" style="width:80px">%</td><td>≥ 3 项</td><td>internship_milestone</td></tr>
+  <tr><td>周报连续性</td><td><input value="20" style="width:80px">%</td><td>连续 ≥ 4 周</td><td>weekly_report</td></tr>
+  <tr><td>附件数量</td><td><input value="15" style="width:80px">%</td><td>≥ 1 个 / 周</td><td>weekly_report</td></tr>
+  <tr><td>导师反馈</td><td><input value="15" style="width:80px">%</td><td>≥ 4.0 分</td><td>weekly_report.review_score</td></tr>
+  <tr><td>延期任务</td><td><input value="10" style="width:80px">%</td><td>≤ 0 项</td><td>internship_milestone</td></tr>
+  <tr><td>企业评价</td><td><input value="10" style="width:80px">%</td><td>≥ 4.0 分</td><td>final_evaluation</td></tr>
+ </tbody></table>
+ <div class="row" style="margin-top:14px"><div class="note" style="flex:1">当前合计 <b>100%</b>，校验通过。</div>
+ <button class="btn primary">保存为新版本</button></div>
+ </div>
+ <div>
+  <div class="card" style="margin-bottom:16px"><h2>等级阈值</h2>
+   <div class="kv" style="grid-template-columns:1fr 1fr">
+    <div><span>优秀</span>≥ 90</div><div><span>良好</span>80 – 89</div>
+    <div><span>合格</span>60 – 79</div><div><span>待改进</span>&lt; 60</div></div>
+   <div class="hint" style="margin-top:10px">缺少必要数据时该因素不参与计算，并在结果页标注。</div></div>
+  <div class="card"><h2>版本历史</h2>
+   <table><tbody>
+    <tr><td>v3</td><td class="num">2026-09-01</td><td>李明华</td><td><span class="tag t-green">生效中</span></td></tr>
+    <tr><td>v2</td><td class="num">2026-06-15</td><td>王慧</td><td><span class="tag t-gray">已停用</span></td></tr>
+    <tr><td>v1</td><td class="num">2026-03-01</td><td>系统初始化</td><td><span class="tag t-gray">已停用</span></td></tr>
+   </tbody></table></div>
+ </div></div></main>
+</div></div></body></html>

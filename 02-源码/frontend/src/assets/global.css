@@ -1,0 +1,168 @@
+:root {
+  /* 森林绿专业配色，与 design/design-system.md 一致 */
+  --primary: #234e3b;
+  --secondary: #3a7d5a;
+  --accent: #315f4c;
+  --bg: #f4f8f5;
+  --success: #2f7d55;
+  --warning: #b7791f;
+  --danger: #a93226;
+  --text: #1f2a24;
+  --text-2: #63736b;
+  --line: #dce7e0;
+  --radius: 8px;
+  --radius-sm: 6px;
+  --shadow: 0 8px 24px rgba(31, 42, 36, 0.12);
+  --font: -apple-system, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  --mono: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #app {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 14px;
+}
+
+a { color: var(--accent); text-decoration: none; }
+
+/* 数字列使用等宽数字，保证表格纵向对齐 */
+.num, .el-table td .num { font-variant-numeric: tabular-nums; font-family: var(--mono); }
+
+.page { padding: 24px; }
+
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+}
+
+.card + .card { margin-top: 16px; }
+
+.card-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-title .sub { font-size: 12px; font-weight: 400; color: var(--text-2); }
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-end;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 16px 4px;
+  margin-bottom: 16px;
+}
+
+.filter-bar .el-form-item { margin-bottom: 10px; }
+
+/* 搜索区下拉宽度 180-240px，需求硬性要求 */
+.filter-bar .el-select,
+.filter-bar .el-input { width: 200px; }
+
+.filter-bar .el-date-editor { width: 240px; }
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.toolbar .tabs { display: flex; gap: 6px; }
+
+.pager { display: flex; justify-content: flex-end; padding-top: 14px; }
+
+.el-button--primary {
+  --el-button-bg-color: var(--primary);
+  --el-button-border-color: var(--primary);
+  --el-button-hover-bg-color: var(--secondary);
+  --el-button-hover-border-color: var(--secondary);
+}
+
+.el-table th.el-table__cell {
+  background: #eef5f0 !important;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* 表头不写死固定宽度，按内容自适应 */
+.el-table th.el-table__cell .cell { white-space: nowrap; }
+
+.el-table .cell { line-height: 1.5; }
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+
+.stat {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+}
+
+.stat .label { color: var(--text-2); font-size: 12px; }
+
+.stat .value {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--primary);
+  font-variant-numeric: tabular-nums;
+  margin-top: 6px;
+}
+
+.stat .value small { font-size: 12px; color: var(--text-2); margin-left: 4px; font-weight: 400; }
+
+.muted { color: var(--text-2); font-size: 12px; }
+
+.empty-hint {
+  padding: 28px;
+  text-align: center;
+  color: var(--text-2);
+  font-size: 13px;
+}
+
+/* 表格图片统一尺寸，避免行高跳动 */
+.thumb {
+  width: 56px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+  display: block;
+}
+
+.timeline-item { border-left: 2px solid var(--line); padding: 0 0 14px 14px; position: relative; }
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--secondary);
+}
+
+.timeline-item .t { font-size: 12px; color: var(--text-2); }
+
+.timeline-item .c { margin-top: 2px; }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>里程碑进度 · 实习管理系统</title>
+<link rel="stylesheet" href="../mock.css"></head>
+<body><div class="shell">
+<aside class="side">
+  <div class="brand"><span class="mark">实习</span>实习过程管理</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="/pages/02_dashboard.html">实习质量看板</a>
+<a class="" href="/pages/05_report.html">周报工作台<span class="badge">6</span></a>
+<div class="group">实习过程</div>
+<a class="" href="/pages/03_application.html">实习备案中心</a>
+<a class="" href="/pages/04_detail.html">档案详情</a>
+<a class="" href="/pages/10_attendance.html">考勤汇总</a>
+<a class="" href="/pages/11_change.html">变更审批<span class="badge">2</span></a>
+<a class="" href="/pages/12_issue.html">异常关怀<span class="badge">1</span></a>
+<a class="" href="/pages/13_visit.html">走访记录</a>
+<div class="group">周报评价</div>
+<a class="" href="/pages/06_review.html">导师批阅</a>
+<a class="on" href="/pages/07_milestone.html">里程碑进度</a>
+<a class="" href="/pages/14_evaluation.html">结项评价</a>
+<div class="group">基础数据</div>
+<a class="" href="/pages/08_company.html">企业库</a>
+<a class="" href="/pages/09_batch.html">实习批次</a>
+<div class="group">分析配置</div>
+<a class="" href="/pages/16_board.html">统计看板</a>
+<a class="" href="/pages/15_rule.html">规则配置</a>
+<div class="group">系统</div>
+<a class="" href="/pages/19_role.html">角色管理</a>
+<a class="" href="/pages/20_message.html">消息中心<span class="badge">3</span></a>
+<a class="" href="/pages/18_profile.html">个人中心</a>
+</nav>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb">实习过程管理 / <b>里程碑进度</b></div>
+    <div class="spacer"></div>
+    <a class="icon-btn" href="/pages/20_message.html" title="消息">✉</a>
+    <span class="hint">实习管理员</span><div class="avatar">林</div>
+  </header>
+  <main class="content">
+<h1>周报里程碑完整度检查</h1>
+<div class="sub">SI20260031 · 陈知远 · 第 8 周 · 规则版本 v3（2026-09-01 生效）· 计算于 2026-10-31 09:00:12</div>
+<div class="kpis" style="grid-template-columns:repeat(4,1fr)">
+ <div class="kpi"><div class="label">综合得分</div><div class="value">87.1</div><div class="delta">等级：良好</div></div>
+ <div class="kpi"><div class="label">推荐结果</div><div class="value" style="font-size:20px;line-height:34px">通过检查</div><div class="delta">不阻断提交</div></div>
+ <div class="kpi"><div class="label">未满足条件</div><div class="value">1</div><div class="delta" style="color:#B7791F">延期任务超阈值</div></div>
+ <div class="kpi"><div class="label">人工调整</div><div class="value" style="font-size:20px;line-height:34px">未调整</div><div class="delta">原始结果保留</div></div>
+</div>
+<div class="split">
+ <div class="card"><h2>输入依据与得分明细</h2>
+  <table><thead><tr><th>输入因素</th><th>取值</th><th>权重</th><th>说明</th><th>得分</th></tr></thead><tbody><tr><td>里程碑完成项</td><td>3 / 4 项</td><td class="num">30%</td><td>3 of 4 里程碑已完成，第 3 项进行中</td><td class="num">24.0</td></tr><tr><td>周报连续性</td><td>连续 8 周按时提交</td><td class="num">20%</td><td>无缺交、无逾期</td><td class="num">20.0</td></tr><tr><td>附件数量</td><td>本周 2 个附件</td><td class="num">15%</td><td>附件数量满足要求</td><td class="num">15.0</td></tr><tr><td>导师反馈</td><td>近 4 周平均 4.5 分</td><td class="num">15%</td><td>批阅及时，评语具体</td><td class="num">13.5</td></tr><tr><td>延期任务</td><td>1 项任务延期 4 天</td><td class="num">10%</td><td>接口联调延期 4 天</td><td class="num">6.0</td></tr><tr><td>企业评价</td><td>4.3 / 5</td><td class="num">10%</td><td>企业导师月度评价</td><td class="num">8.6</td></tr></tbody></table>
+  <div class="note" style="margin-top:12px">计算口径：各项得分 = 归一化取值 × 权重；缺少数据项不参与计算并在结果中标注「数据缺失」。相同输入与规则版本结果可复现。</div>
+  <h2 style="margin-top:20px">规则权重（合计 100%）</h2>
+  <div class="progress"><i style="width:100%"></i></div>
+  <div class="hint" style="margin-top:6px">里程碑 30% · 连续性 20% · 附件 15% · 导师反馈 15% · 延期 10% · 企业评价 10%</div>
+ </div>
+ <div>
+  <div class="card" style="margin-bottom:16px"><h2>结果解释</h2>
+   <p style="margin:0 0 8px"><b>主要影响因素</b>：里程碑完成项（24.0 / 30）、周报连续性（20.0 / 20）。</p>
+   <p style="margin:0 0 8px"><b>未满足条件</b>：延期任务 1 项，超过「延期 ≤ 0 项」阈值，扣 4.0 分。</p>
+   <p style="margin:0"><b>可改进项</b>：将第 3 项里程碑拆分为两个子任务并提前一周排期；下周至少补充 1 份接口文档附件。</p>
+  </div>
+  <div class="card" style="margin-bottom:16px"><h2>人工修正</h2>
+   <div class="hint">业务负责人可调整最终结果，必须填写原因；原始计算结果不被覆盖。</div>
+   <label class="f" style="margin-top:10px"><span>调整后等级</span><select style="width:100%"><option>保持原结果</option><option>优秀</option><option>合格</option><option>待改进</option></select></label>
+   <textarea style="width:100%;height:70px;border:1px solid #DCE7E0;border-radius:6px;padding:8px;font:13px/20px inherit" placeholder="调整原因（不少于 5 个字）"></textarea>
+   <button class="btn primary" style="margin-top:10px;width:100%">保存修正</button>
+  </div>
+  <div class="card"><h2>历史计算</h2>
+   <table><tbody>
+    <tr><td>第 8 周</td><td class="num">87.1</td><td><span class="tag t-green">良好</span></td><td class="num">10-31 09:00</td></tr>
+    <tr><td>第 7 周</td><td class="num">82.4</td><td><span class="tag t-green">良好</span></td><td class="num">10-24 09:00</td></tr>
+    <tr><td>第 6 周</td><td class="num">76.0</td><td><span class="tag t-amber">合格</span></td><td class="num">10-17 09:00</td></tr>
+    <tr><td>第 5 周</td><td class="num">68.5</td><td><span class="tag t-amber">合格</span></td><td class="num">10-10 09:00</td></tr>
+   </tbody></table></div>
+ </div></div></main>
+</div></div></body></html>

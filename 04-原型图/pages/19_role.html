@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>角色管理 · 实习管理系统</title>
+<link rel="stylesheet" href="../mock.css"></head>
+<body><div class="shell">
+<aside class="side">
+  <div class="brand"><span class="mark">实习</span>实习过程管理</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="/pages/02_dashboard.html">实习质量看板</a>
+<a class="" href="/pages/05_report.html">周报工作台<span class="badge">6</span></a>
+<div class="group">实习过程</div>
+<a class="" href="/pages/03_application.html">实习备案中心</a>
+<a class="" href="/pages/04_detail.html">档案详情</a>
+<a class="" href="/pages/10_attendance.html">考勤汇总</a>
+<a class="" href="/pages/11_change.html">变更审批<span class="badge">2</span></a>
+<a class="" href="/pages/12_issue.html">异常关怀<span class="badge">1</span></a>
+<a class="" href="/pages/13_visit.html">走访记录</a>
+<div class="group">周报评价</div>
+<a class="" href="/pages/06_review.html">导师批阅</a>
+<a class="" href="/pages/07_milestone.html">里程碑进度</a>
+<a class="" href="/pages/14_evaluation.html">结项评价</a>
+<div class="group">基础数据</div>
+<a class="" href="/pages/08_company.html">企业库</a>
+<a class="" href="/pages/09_batch.html">实习批次</a>
+<div class="group">分析配置</div>
+<a class="" href="/pages/16_board.html">统计看板</a>
+<a class="" href="/pages/15_rule.html">规则配置</a>
+<div class="group">系统</div>
+<a class="on" href="/pages/19_role.html">角色管理</a>
+<a class="" href="/pages/20_message.html">消息中心<span class="badge">3</span></a>
+<a class="" href="/pages/18_profile.html">个人中心</a>
+</nav>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb">实习过程管理 / <b>角色管理</b></div>
+    <div class="spacer"></div>
+    <a class="icon-btn" href="/pages/20_message.html" title="消息">✉</a>
+    <span class="hint">实习管理员</span><div class="avatar">林</div>
+  </header>
+  <main class="content">
+<h1>角色管理</h1><div class="sub">菜单权限与数据范围分别控制；只有菜单权限不能直接调用写接口</div>
+<div class="row" style="align-items:flex-start">
+<div class="card" style="flex:1"><h2>角色列表</h2>
+<table><thead><tr><th>角色编码</th><th>角色名称</th><th>数据范围</th><th>用户数</th><th>操作</th></tr></thead><tbody>
+<tr><td>admin</td><td>实习管理员</td><td><span class="tag t-blue">全部</span></td><td class="num">2</td><td><button class="btn sm">分配菜单</button></td></tr>
+<tr><td>teacher</td><td>校内指导教师</td><td><span class="tag t-blue">本部门</span></td><td class="num">9</td><td><button class="btn sm">分配菜单</button></td></tr>
+<tr><td>mentor</td><td>企业导师</td><td><span class="tag t-gray">本人负责</span></td><td class="num">23</td><td><button class="btn sm">分配菜单</button></td></tr>
+<tr><td>student</td><td>学生</td><td><span class="tag t-gray">本人</span></td><td class="num">128</td><td><button class="btn sm">分配菜单</button></td></tr>
+</tbody></table></div>
+<div class="card" style="width:420px"><h2>为「校内指导教师」分配菜单</h2>
+<div style="border:1px solid #DCE7E0;border-radius:6px;padding:10px 12px;font-size:13px;line-height:26px">
+<label><input type="checkbox" checked> 工作台</label><br>
+<label><input type="checkbox" checked> 实习过程</label><br>
+<div style="padding-left:20px"><label><input type="checkbox" checked> 我的学生</label><br>
+<label><input type="checkbox" checked> 异常关怀</label><br>
+<label><input type="checkbox" checked> 走访记录</label></div>
+<label><input type="checkbox" checked> 周报评价</label><br>
+<div style="padding-left:20px"><label><input type="checkbox" checked> 周报批阅</label><br>
+<label><input type="checkbox" checked> 里程碑进度</label><br>
+<label><input type="checkbox" checked> 校内评价</label></div>
+<label style="color:#9AA8A0"><input type="checkbox" disabled> 菜单管理（系统内置隐藏）</label>
+</div>
+<div class="row" style="margin-top:12px"><button class="btn primary">保存</button><button class="btn">重置</button></div>
+</div></div></main>
+</div></div></body></html>

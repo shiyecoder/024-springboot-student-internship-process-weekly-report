@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>实习备案中心 · 实习管理系统</title>
+<link rel="stylesheet" href="../mock.css"></head>
+<body><div class="shell">
+<aside class="side">
+  <div class="brand"><span class="mark">实习</span>实习过程管理</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="/pages/02_dashboard.html">实习质量看板</a>
+<a class="" href="/pages/05_report.html">周报工作台<span class="badge">6</span></a>
+<div class="group">实习过程</div>
+<a class="on" href="/pages/03_application.html">实习备案中心</a>
+<a class="" href="/pages/04_detail.html">档案详情</a>
+<a class="" href="/pages/10_attendance.html">考勤汇总</a>
+<a class="" href="/pages/11_change.html">变更审批<span class="badge">2</span></a>
+<a class="" href="/pages/12_issue.html">异常关怀<span class="badge">1</span></a>
+<a class="" href="/pages/13_visit.html">走访记录</a>
+<div class="group">周报评价</div>
+<a class="" href="/pages/06_review.html">导师批阅</a>
+<a class="" href="/pages/07_milestone.html">里程碑进度</a>
+<a class="" href="/pages/14_evaluation.html">结项评价</a>
+<div class="group">基础数据</div>
+<a class="" href="/pages/08_company.html">企业库</a>
+<a class="" href="/pages/09_batch.html">实习批次</a>
+<div class="group">分析配置</div>
+<a class="" href="/pages/16_board.html">统计看板</a>
+<a class="" href="/pages/15_rule.html">规则配置</a>
+<div class="group">系统</div>
+<a class="" href="/pages/19_role.html">角色管理</a>
+<a class="" href="/pages/20_message.html">消息中心<span class="badge">3</span></a>
+<a class="" href="/pages/18_profile.html">个人中心</a>
+</nav>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb">实习过程管理 / <b>实习备案中心</b></div>
+    <div class="spacer"></div>
+    <a class="icon-btn" href="/pages/20_message.html" title="消息">✉</a>
+    <span class="hint">实习管理员</span><div class="avatar">林</div>
+  </header>
+  <main class="content">
+<h1>实习备案中心</h1><div class="sub">共 128 条实习档案 · 待审核 6 条 · 今日新增 3 条</div>
+<div class="card" style="margin-bottom:16px">
+  <div class="toolbar" style="margin-bottom:0">
+    <input class="search" placeholder="实习编号 / 学生姓名">
+    <select><option>全部学院</option><option>计算机学院</option><option>商学院</option></select>
+    <select><option>全部企业</option></select>
+    <select><option>全部阶段</option><option>待审核</option><option>待到岗</option><option>实习中</option><option>待结项</option><option>已完成</option></select>
+    <select><option>周报状态</option><option>待提交</option><option>待批阅</option><option>已退修</option></select>
+    <input type="date" value="2026-05-01" style="width:150px"><span class="hint">至</span><input type="date" value="2026-10-31" style="width:150px">
+    <button class="btn primary">查询</button><button class="btn">重置</button>
+    <div style="flex:1"></div><button class="btn ghost">高级筛选</button><button class="btn">导出当前结果</button>
+  </div>
+</div>
+<div class="card">
+<table><thead><tr><th>实习编号</th><th>学生</th><th>专业</th><th>企业</th><th>岗位</th><th>校内导师</th><th>企业导师</th><th>当前阶段</th><th>开始日期</th><th>操作</th></tr></thead>
+<tbody><tr><td><a href="04_detail.html">SI20260031</a></td><td>陈知远</td><td>2022 级软件工程</td><td>杭州云枢科技</td>
+<td>后端开发实习</td><td>李明华</td><td>周建国</td><td><span class="tag t-amber">待审核</span></td><td class="num">2026-10-28</td>
+<td><button class="btn sm">查看</button> <button class="btn sm ghost">流转</button></td></tr><tr><td><a href="04_detail.html">SI20260030</a></td><td>宋雨桐</td><td>2022 级数据科学</td><td>宁波甬信会计师事务所</td>
+<td>数据分析助理</td><td>李明华</td><td>王倩</td><td><span class="tag t-blue">协议审核</span></td><td class="num">2026-10-26</td>
+<td><button class="btn sm">查看</button> <button class="btn sm ghost">流转</button></td></tr><tr><td><a href="04_detail.html">SI20260029</a></td><td>赵一鸣</td><td>2022 级网络工程</td><td>浙江中控技术</td>
+<td>运维实习</td><td>陈立群</td><td>刘畅</td><td><span class="tag t-green">实习中</span></td><td class="num">2026-10-21</td>
+<td><button class="btn sm">查看</button> <button class="btn sm ghost">流转</button></td></tr><tr><td><a href="04_detail.html">SI20260028</a></td><td>周若菡</td><td>2021 级计算机</td><td>上海远景能源</td>
+<td>产品运营实习</td><td>陈立群</td><td>孙悦</td><td><span class="tag t-green">实习中</span></td><td class="num">2026-10-18</td>
+<td><button class="btn sm">查看</button> <button class="btn sm ghost">流转</button></td></tr><tr><td><a href="04_detail.html">SI20260027</a></td><td>林嘉禾</td><td>2022 级软件工程</td><td>杭州拾光传媒</td>
+<td>前端开发实习</td><td>李明华</td><td>郑楠</td><td><span class="tag t-blue">待结项</span></td><td class="num">2026-10-12</td>
+<td><button class="btn sm">查看</button> <button class="btn sm ghost">流转</button></td></tr><tr><td><a href="04_detail.html">SI20260026</a></td><td>吴承宇</td><td>2021 级软件工程</td><td>深圳恒瑞医疗</td>
+<td>测试实习</td><td>王慧</td><td>黄磊</td><td><span class="tag t-gray">已完成</span></td><td class="num">2026-09-30</td>
+<td><button class="btn sm">查看</button> <button class="btn sm ghost">流转</button></td></tr><tr><td><a href="04_detail.html">SI20260025</a></td><td>何书宁</td><td>2022 级人工智能</td><td>北京字节跳动</td>
+<td>算法实习</td><td>王慧</td><td>张一凡</td><td><span class="tag t-red">已中止</span></td><td class="num">2026-09-24</td>
+<td><button class="btn sm">查看</button> <button class="btn sm ghost">流转</button></td></tr><tr><td><a href="04_detail.html">SI20260024</a></td><td>郑亦航</td><td>2022 级软件工程</td><td>杭州同花顺</td>
+<td>Java 开发实习</td><td>李明华</td><td>方晓</td><td><span class="tag t-green">实习中</span></td><td class="num">2026-09-18</td>
+<td><button class="btn sm">查看</button> <button class="btn sm ghost">流转</button></td></tr></tbody></table><div class="pager"><span>共 128 条</span><span class="pg">‹</span><span class="pg on">1</span><span class="pg">2</span><span class="pg">3</span><span class="pg">›</span><span>每页 10 条</span></div>
+</div></main>
+</div></div></body></html>

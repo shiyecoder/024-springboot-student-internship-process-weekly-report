@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<title>登录 · 实习过程管理系统</title><link rel="stylesheet" href="../mock.css">
+<style>
+body{margin:0;min-height:100vh;display:grid;grid-template-columns:1.1fr .9fr;font-family:-apple-system,"PingFang SC",sans-serif}
+.l{background:linear-gradient(150deg,#1B3E2F,#234E3B 45%,#3A7D5A);color:#fff;padding:56px 64px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.l::after{content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;border:1px solid rgba(255,255,255,.14);border-radius:50%}
+.l::before{content:"";position:absolute;right:-40px;bottom:-240px;width:520px;height:520px;border:1px solid rgba(255,255,255,.09);border-radius:50%}
+.l h1{font-size:30px;line-height:42px;margin:0 0 12px;font-weight:600}
+.l p{color:#BFD9CB;font-size:14px;max-width:420px}
+.l .steps{display:flex;gap:8px;flex-wrap:wrap;font-size:12px;color:#D7E9DE}
+.l .steps span{border:1px solid rgba(255,255,255,.28);border-radius:14px;padding:3px 12px}
+.r{display:grid;place-items:center;background:#F7FAF8}
+.form{width:360px}
+.form h2{font-size:22px;margin:0 0 6px}
+.form .tip{color:#63736B;font-size:13px;margin-bottom:26px}
+.form input{width:100%;height:44px;margin-bottom:14px;border:1px solid #DCE7E0;border-radius:8px;padding:0 14px;font-size:14px}
+.form .btn{width:100%;height:44px;font-size:15px;border-radius:8px;background:#234E3B;color:#fff;border:0}
+.roles{display:flex;gap:6px;margin-bottom:18px;font-size:12px;color:#63736B}
+.roles span{border:1px solid #DCE7E0;border-radius:12px;padding:2px 10px;background:#fff}
+.roles span.on{border-color:#3A7D5A;color:#234E3B;background:#E6F3EB}
+</style></head><body>
+<div class="l">
+  <div><div style="display:flex;align-items:center;gap:10px;margin-bottom:48px">
+    <div style="width:30px;height:30px;border-radius:8px;background:#8FC7A8"></div>
+    <b style="font-size:16px">实习过程与周报管理系统</b></div>
+    <h1>实习开始之后，<br>每一步都有留痕</h1>
+    <p>企业与岗位备案、协议材料、周报批阅、月度考勤、变更审批、双导师评价与结项归档，一条链路闭环。</p></div>
+  <div class="steps"><span>实习备案</span><span>协议审核</span><span>过程周报</span><span>阶段检查</span><span>企业评价</span><span>学校归档</span></div>
+</div>
+<div class="r"><form class="form">
+  <h2>登录</h2><div class="tip">使用学校统一分配的实习系统账号</div>
+  <div class="roles"><span class="on">学生</span><span>校内导师</span><span>企业导师</span><span>管理员</span></div>
+  <input placeholder="账号 / 学号" value="2022010312">
+  <input type="password" placeholder="密码" value="123456">
+  <button class="btn" type="button" onclick="location.href='02_dashboard.html'">登 录</button>
+  <div style="margin-top:16px;font-size:12px;color:#63736B">连续 5 次失败将锁定 10 分钟 · 忘记密码联系院系管理员</div>
+</form></div></body></html>

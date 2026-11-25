@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>实习质量看板 · 实习管理系统</title>
+<link rel="stylesheet" href="../mock.css"></head>
+<body><div class="shell">
+<aside class="side">
+  <div class="brand"><span class="mark">实习</span>实习过程管理</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="on" href="/pages/02_dashboard.html">实习质量看板</a>
+<a class="" href="/pages/05_report.html">周报工作台<span class="badge">6</span></a>
+<div class="group">实习过程</div>
+<a class="" href="/pages/03_application.html">实习备案中心</a>
+<a class="" href="/pages/04_detail.html">档案详情</a>
+<a class="" href="/pages/10_attendance.html">考勤汇总</a>
+<a class="" href="/pages/11_change.html">变更审批<span class="badge">2</span></a>
+<a class="" href="/pages/12_issue.html">异常关怀<span class="badge">1</span></a>
+<a class="" href="/pages/13_visit.html">走访记录</a>
+<div class="group">周报评价</div>
+<a class="" href="/pages/06_review.html">导师批阅</a>
+<a class="" href="/pages/07_milestone.html">里程碑进度</a>
+<a class="" href="/pages/14_evaluation.html">结项评价</a>
+<div class="group">基础数据</div>
+<a class="" href="/pages/08_company.html">企业库</a>
+<a class="" href="/pages/09_batch.html">实习批次</a>
+<div class="group">分析配置</div>
+<a class="" href="/pages/16_board.html">统计看板</a>
+<a class="" href="/pages/15_rule.html">规则配置</a>
+<div class="group">系统</div>
+<a class="" href="/pages/19_role.html">角色管理</a>
+<a class="" href="/pages/20_message.html">消息中心<span class="badge">3</span></a>
+<a class="" href="/pages/18_profile.html">个人中心</a>
+</nav>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb">实习过程管理 / <b>实习质量看板</b></div>
+    <div class="spacer"></div>
+    <a class="icon-btn" href="/pages/20_message.html" title="消息">✉</a>
+    <span class="hint">实习管理员</span><div class="avatar">林</div>
+  </header>
+  <main class="content">
+<h1>实习质量看板</h1><div class="sub">2026 春季批次 · 数据截至 2026-10-31 20:00 · 默认展示最近 30 天</div>
+<div class="toolbar"><select><option>2026 春季批次</option><option>2025 秋季批次</option></select>
+<select><option>全部院系</option><option>计算机学院</option></select>
+<select><option>最近 30 天</option><option>本季度</option><option>本年</option></select>
+<button class="btn ghost">导出</button><div style="flex:1"></div>
+<button class="btn primary" onclick="location.href='03_application.html'">新建实习备案</button></div>
+<div class="kpis"><div class="kpi"><div class="label">实习人数</div><div class="value">128</div><div class="delta">环比 +8</div></div><div class="kpi"><div class="label">周报提交率</div><div class="value">92.4%</div><div class="delta">环比 +3.1pp</div></div>
+<div class="kpi"><div class="label">批阅及时率</div><div class="value">86.7%</div><div class="delta">环比 +1.4pp</div></div><div class="kpi"><div class="label">里程碑完成率</div><div class="value">74.2%</div></div>
+<div class="kpi"><div class="label">异常实习数</div><div class="value">6</div><div class="delta">较上周 -2</div></div><div class="kpi"><div class="label">企业平均评分</div><div class="value">4.32</div><div class="delta">满分 5</div></div></div>
+<div class="grid" style="grid-template-columns:repeat(3,1fr)"><div class="chart"><div class="ct">近 6 个月实习人数<span>人</span></div><div class="bars"><i style="height:42%"></i><i style="height:58%"></i><i style="height:65%"></i><i style="height:71%"></i><i style="height:88%"></i><i style="height:96%"></i></div><div class="legend"><span><i style="background:#3A7D5A"></i>在岗人数</span></div></div><div class="chart"><div class="ct">实习阶段分布<span>共 128 人</span></div><div class="donut"></div><div class="legend"><span><i style="background:#234E3B"></i>实习中 42%</span><span><i style="background:#3A7D5A"></i>待结项 26%</span><span><i style="background:#9DB8A8"></i>待审核 18%</span><span><i style="background:#C9DBD0"></i>已完成 14%</span></div></div><div class="chart"><div class="ct">周报提交及时率<span>近 8 周</span></div><div class="bars"><i style="height:72%"></i><i style="height:78%"></i><i style="height:69%"></i><i style="height:84%"></i><i style="height:88%"></i><i style="height:81%"></i><i style="height:92%"></i><i style="height:90%"></i></div></div><div class="chart"><div class="ct">行业分布 Top6<span>企业数</span></div><div class="bars"><i style="height:90%"></i><i style="height:76%"></i><i style="height:62%"></i><i style="height:54%"></i><i style="height:40%"></i><i style="height:28%"></i></div><div class="legend"><span><i style="background:#3A7D5A"></i>信息技术 · 制造 · 金融 · 教育 · 医疗 · 建筑</span></div></div><div class="chart"><div class="ct">企业评分区间<span>家</span></div><div class="bars"><i style="height:30%"></i><i style="height:55%"></i><i style="height:68%"></i><i style="height:82%"></i><i style="height:46%"></i></div></div><div class="chart"><div class="ct">里程碑完整度结果<span>创新模块</span></div><div class="bars"><i style="height:26%"></i><i style="height:48%"></i><i style="height:72%"></i><i style="height:58%"></i><i style="height:34%"></i></div><div class="legend"><span><i style="background:#234E3B"></i>优秀 26 · 良好 48 · 合格 72 · 待改进 58 · 不推荐 34</span></div></div></div>
+</main>
+</div></div></body></html>

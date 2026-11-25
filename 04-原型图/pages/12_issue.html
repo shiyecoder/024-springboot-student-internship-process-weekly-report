@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>异常关怀 · 实习管理系统</title>
+<link rel="stylesheet" href="../mock.css"></head>
+<body><div class="shell">
+<aside class="side">
+  <div class="brand"><span class="mark">实习</span>实习过程管理</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="/pages/02_dashboard.html">实习质量看板</a>
+<a class="" href="/pages/05_report.html">周报工作台<span class="badge">6</span></a>
+<div class="group">实习过程</div>
+<a class="" href="/pages/03_application.html">实习备案中心</a>
+<a class="" href="/pages/04_detail.html">档案详情</a>
+<a class="" href="/pages/10_attendance.html">考勤汇总</a>
+<a class="" href="/pages/11_change.html">变更审批<span class="badge">2</span></a>
+<a class="on" href="/pages/12_issue.html">异常关怀<span class="badge">1</span></a>
+<a class="" href="/pages/13_visit.html">走访记录</a>
+<div class="group">周报评价</div>
+<a class="" href="/pages/06_review.html">导师批阅</a>
+<a class="" href="/pages/07_milestone.html">里程碑进度</a>
+<a class="" href="/pages/14_evaluation.html">结项评价</a>
+<div class="group">基础数据</div>
+<a class="" href="/pages/08_company.html">企业库</a>
+<a class="" href="/pages/09_batch.html">实习批次</a>
+<div class="group">分析配置</div>
+<a class="" href="/pages/16_board.html">统计看板</a>
+<a class="" href="/pages/15_rule.html">规则配置</a>
+<div class="group">系统</div>
+<a class="" href="/pages/19_role.html">角色管理</a>
+<a class="" href="/pages/20_message.html">消息中心<span class="badge">3</span></a>
+<a class="" href="/pages/18_profile.html">个人中心</a>
+</nav>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb">实习过程管理 / <b>异常关怀</b></div>
+    <div class="spacer"></div>
+    <a class="icon-btn" href="/pages/20_message.html" title="消息">✉</a>
+    <span class="hint">实习管理员</span><div class="avatar">林</div>
+  </header>
+  <main class="content">
+<h1>异常关怀</h1><div class="sub">岗位不符、安全、薪资争议、长期无法联系四类异常的上报与处置台账</div>
+<div class="toolbar"><select><option>全部类型</option><option>岗位不符</option><option>安全问题</option><option>薪资争议</option><option>无法联系</option></select>
+<select><option>全部状态</option><option>待处置</option><option>处置中</option><option>已关闭</option></select>
+<button class="btn primary">查询</button><div style="flex:1"></div><button class="btn danger">上报异常</button></div>
+<div class="card"><table><thead><tr><th>编号</th><th>学生</th><th>企业</th><th>类型</th><th>等级</th><th>上报时间</th><th>处理人</th><th>状态</th><th>操作</th></tr></thead><tbody>
+<tr><td>IS20261029001</td><td>林嘉禾</td><td>杭州拾光传媒</td><td>薪资争议</td><td><span class="tag t-red">高</span></td><td class="num">2026-10-29 11:20</td><td>李明华</td><td><span class="tag t-amber">处置中</span></td><td><button class="btn sm">处置</button></td></tr>
+<tr><td>IS20261027002</td><td>赵一鸣</td><td>浙江中控技术</td><td>岗位不符</td><td><span class="tag t-amber">中</span></td><td class="num">2026-10-27 09:05</td><td>陈立群</td><td><span class="tag t-amber">处置中</span></td><td><button class="btn sm">处置</button></td></tr>
+<tr><td>IS20261020003</td><td>何书宁</td><td>北京字节跳动</td><td>无法联系</td><td><span class="tag t-red">高</span></td><td class="num">2026-10-20 16:40</td><td>王慧</td><td><span class="tag t-green">已关闭</span></td><td><button class="btn sm">查看</button></td></tr>
+<tr><td>IS20261011004</td><td>吴承宇</td><td>深圳恒瑞医疗</td><td>安全问题</td><td><span class="tag t-amber">中</span></td><td class="num">2026-10-11 14:12</td><td>王慧</td><td><span class="tag t-green">已关闭</span></td><td><button class="btn sm">查看</button></td></tr>
+</tbody></table></div>
+<div class="card" style="margin-top:16px"><h2>处置记录（IS20261029001）</h2>
+<ul class="timeline">
+<li><b>学生上报薪资争议</b><div class="m">林嘉禾 · 2026-10-29 11:20 · 附聊天记录截图 2 张</div></li>
+<li><b>校内导师电话联系企业</b><div class="m">李明华 · 2026-10-29 15:02 · 约定 10-31 现场走访</div></li>
+<li><b>现场走访核实</b><div class="m">李明华 · 2026-10-31 10:30 · 企业承诺 11 月补发差额</div></li>
+<li><b>等待企业整改回执</b><div class="m">系统 · 2026-10-31 10:35 · 状态：处置中</div></li>
+</ul></div></main>
+</div></div></body></html>
